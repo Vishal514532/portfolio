@@ -1,0 +1,222 @@
+body {
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+/*menu*/
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9999;
+}
+
+.menu-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.nev ul {
+  padding-left: 0;
+  display: inline-block;
+}
+
+.nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.nav ul li a {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.content h1 {
+  overflow: hidden;
+  font-weight: bold;
+  margin: auto;
+  /*position: fixed;*/ /*Commented out because the intention of this line was unclear*/
+  padding-left: 100px;
+  padding-top: 200px;
+  text-transform: uppercase;
+}
+
+/*hero*/
+/*.hero-wrapper img{
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}*/
+
+.slider {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+}
+
+.slides img {
+  width: 100%;
+  display: block;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.box-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.box h1 {
+  font-size: 52px;
+  letter-spacing: 2px;
+  font-weight: 700; /*Changed from 700px to 700*/
+  text-transform: uppercase;
+}
+
+/*sectiontwo*/
+.sectiontwo {
+  width: 150%;
+  overflow: auto;
+  margin: 30px; /*Changed from margin-block: 30px; to margin: 30px;*/
+}
+
+.sectiontwo div {
+  width: 33%;
+  float: left;
+  margin-top: 10px;
+}
+
+.rightslides {
+  display: flex;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.rightslides img {
+  width: 100%;
+}
+
+/* image grid*/
+.photogallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 60px auto; /*Changed from margin-top: 60px; to margin: 60px auto;*/
+  padding: 0 4px;
+}
+
+.column {
+  max-width: 24%;
+  padding: 3.6px;
+  float: left;
+  width: 25%;
+  margin-left: 5.2px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.photogallery:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+      width: 100%;
+  }
+}
+
+/*leftsection*/
+.lastsection {
+  width: 150%;
+  overflow: auto;
+}
+
+.lastsection div {
+  width: 33%;
+  float: left;
+  margin-top: 60px;
+  margin-left: 10px;
+}
+
+.leftimage {
+  display: flex;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.leftimage img {
+  width: 100%;
+}
+
+.footer {
+  width: 100%; /*Changed from width: 150%; to width: 100%;*/
+  margin-top: 5px;
+  height: 30px;
+  background-color: grey;
+  color: white;
+}
+
+.footer p {
+  font-size: 12px;
+  padding-left: 10px;
+  padding-top: 5px;
+  margin-top: 5px; /*Changed from padding-top: 5px; to margin-top: 5px;*/
+}
